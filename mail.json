@@ -1,0 +1,749 @@
+{
+    attachments: [],
+    headers: Map(22) {
+      'return-path' => {
+        value: [Array],
+        html: '<span class="mp_address_group"><a href="mailto:kandent914@gmail.com" class="mp_address_email">kandent914@gmail.com</a></span>',
+        text: 'kandent914@gmail.com'
+      },
+      'received' => [
+        'from mail-yb1-f174.google.com (mail-yb1-f174.google.com [209.85.219.174]) by inbound-smtp.us-east-1.amazonaws.com with SMTP id mbh045ea0vbrlcobgpiqq3r9g1gigrf2o8399ag1 for ses-s3-mail@e64apiru.numrock-k.com; Sun, 15 Nov 2020 04:57:47 +0000 (UTC)',
+        'by mail-yb1-f174.google.com with SMTP id o144so3709341ybg.7 for <ses-s3-mail@e64apiru.numrock-k.com>; Sat, 14 Nov 2020 20:57:47 -0800 (PST)'
+      ],
+      'x-ses-spam-verdict' => 'PASS',
+      'x-ses-virus-verdict' => 'PASS',
+      'received-spf' => 'pass (spfCheck: domain of _spf.google.com designates 209.85.219.174 as permitted sender) client-ip=209.85.219.174; envelope-from=kandent914@gmail.com; helo=mail-yb1-f174.google.com;',
+      'authentication-results' => 'amazonses.com; spf=pass (spfCheck: domain of _spf.google.com designates 209.85.219.174 as permitted sender) client-ip=209.85.219.174; envelope-from=kandent914@gmail.com; helo=mail-yb1-f174.google.com; dkim=pass header.i=@gmail.com; dmarc=pass header.from=gmail.com;',
+      'x-ses-receipt' => 'AEFBQUFBQUFBQUFHQW9sYkxOM1pLT3h6RlNFS1NiOFRGTGNmOGFHdEZWeVdQZ1F4T05jMEUxOVRpREo0S2pFMWZDOXNRYVBWZ1ZLRndhNS9WL1JrQ3drMzFmQ0tBbHA3dzZQWGFIRGdma04wVE5raWhvd2hKL2JpWktuaVBkYnRLR0M0eGdQaTFmeHNrLzZUalVlOENta1dZMGR1ak5BVDFHWHhZRFZoT3M4ZUZ1eU1meTNKcTdPdjlKNmt6aU5tMFp5UVIyT3FmRVZmQURVZUhaKzBDeWhZalpvYm0rS0VUQUU3N0NINU1IOG42MHZua2pnNTl2T0pzcGNpY2JhZms1dXBSRm01dEY2WVM2UDR6SGVqQ2pMN0VDcEJHWmxiSlBqNzlJNEJLTG1XektSNDZveGNXQlE9PQ==',
+      'x-ses-dkim-signature' => 'a=rsa-sha256; q=dns/txt; b=gk/JiTos6xhQTcGWD6LKqaHIRvrIpMQaU9lxqw1hE0l7Gkmq4tH9mJDMRTnchZSAwk4732ISnngIVI6picA9qp9pUBXuFjnqe+qgAG44cKO9o1Ow0RT9fF/nPG+chVoJ1oynP4EYpIx6w7h3q8NvNskntF0raBdSGxFGcui+/3M=; c=relaxed/simple; s=224i4yxa5dv7c2xz3womw6peuasteono; d=amazonses.com; t=1605416268; v=1; bh=oq1qrbSsKEKW6CLEn8R34NOdGMCl5e7SAMDwLsmmu4Y=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;',
+      'dkim-signature' => { value: 'v=1', params: [Object] },
+      'x-google-dkim-signature' => 'v=1; a=rsa-sha256; c=relaxed/relaxed; d=1e100.net; s=20161025; h=x-gm-message-state:mime-version:references:in-reply-to:from:date :message-id:subject:to; bh=s/JOomBYxuSiRdsk1oy2uhwFAOw9QYCpJOqmiM5Ie7Y=; b=ImrYlYU/QUzwed0z8v64CDTkMcONY4gM0VSfO4QJE2mFKM7/Hs+CSBANfHn6eLpCxs cXSdnzIZnVIVSZhtx/NCD8A6YGDBhz5+eYdD64FR4I4YSDW+AdzF0GTX0yoBDNsL9kxV U6roxt5u6DgYiF/TSbfDF6F0XqVmR0KlOO1HtDkz2vHCzheJ/VUgNBUTC4XCA79BcLHU G/BSQhx7fonWEgC8lBzTMpLrgQVba61XfFQ97xMocglKTLDlj1o/Amdux7fcOFa1LdRF TWEnhhylz2JJkcbb5UBIrvenWTvNeRuovjuP5VJp9X+PbRzC9LfhWTLG0uQDrtuBlq0x HT5g==',
+      'x-gm-message-state' => 'AOAM5336+qOCb1jIHI31U5ZF3yGt72vykanGr8moKdKJD5a+yruCHj5b kKvZ99MnTNttS26xTB0FtBJM3m90DygCGDW7ocOjYHH+7LaNtg==',
+      'x-google-smtp-source' => 'ABdhPJyILfMH4+USkLDoGtiYmmpYing9WANByAwU49xabRHNg624XZBsuwlru+P31Uv0AIl+GPnzceaGV1e+PKQ9C1o=',
+      'x-received' => 'by 2002:a25:3b87:: with SMTP id i129mr12091246yba.237.1605416267192; Sat, 14 Nov 2020 20:57:47 -0800 (PST)',
+      'mime-version' => '1.0',
+      'references' => '<20150301050000.86539038.1000.140346@mkrm.rakuten.com>',
+      'in-reply-to' => '<20150301050000.86539038.1000.140346@mkrm.rakuten.com>',
+      'from' => {
+        value: [Array],
+        html: '<span class="mp_address_group"><span class="mp_address_name">&#x91CE;&#x6751;&#x4FCA;&#x592A;</span> &lt;<a href="mailto:kandent914@gmail.com" class="mp_address_email">kandent914@gmail.com</a>&gt;</span>',
+        text: '野村俊太 <kandent914@gmail.com>'
+      },
+      'date' => 2020-11-15T04:57:34.000Z,
+      'message-id' => '<CAMTa_=QDeQZ61uqn7Pwr55TO01XGFTGjx7kHj6NodnBT95Z6rw@mail.gmail.com>',
+      'subject' => 'Fwd: カード利用のお知らせ(本人ご利用分)',
+      'to' => {
+        value: [Array],
+        html: '<span class="mp_address_group"><a href="mailto:ses-s3-mail@e64apiru.numrock-k.com" class="mp_address_email">ses-s3-mail@e64apiru.numrock-k.com</a></span>',
+        text: 'ses-s3-mail@e64apiru.numrock-k.com'
+      },
+      'content-type' => { value: 'multipart/alternative', params: [Object] }
+    },
+    headerLines: [
+      { key: 'return-path', line: 'Return-Path: <kandent914@gmail.com>' },
+      {
+        key: 'received',
+        line: 'Received: from mail-yb1-f174.google.com (mail-yb1-f174.google.com [209.85.219.174])\r\n' +
+          ' by inbound-smtp.us-east-1.amazonaws.com with SMTP id mbh045ea0vbrlcobgpiqq3r9g1gigrf2o8399ag1\r\n' +
+          ' for ses-s3-mail@e64apiru.numrock-k.com;\r\n' +
+          ' Sun, 15 Nov 2020 04:57:47 +0000 (UTC)'
+      },
+      { key: 'x-ses-spam-verdict', line: 'X-SES-Spam-Verdict: PASS' },
+      { key: 'x-ses-virus-verdict', line: 'X-SES-Virus-Verdict: PASS' },
+      {
+        key: 'received-spf',
+        line: 'Received-SPF: pass (spfCheck: domain of _spf.google.com designates 209.85.219.174 as permitted sender) client-ip=209.85.219.174; envelope-from=kandent914@gmail.com; helo=mail-yb1-f174.google.com;'
+      },
+      {
+        key: 'authentication-results',
+        line: 'Authentication-Results: amazonses.com;\r\n' +
+          ' spf=pass (spfCheck: domain of _spf.google.com designates 209.85.219.174 as permitted sender) client-ip=209.85.219.174; envelope-from=kandent914@gmail.com; helo=mail-yb1-f174.google.com;\r\n' +
+          ' dkim=pass header.i=@gmail.com;\r\n' +
+          ' dmarc=pass header.from=gmail.com;'
+      },
+      {
+        key: 'x-ses-receipt',
+        line: 'X-SES-RECEIPT: AEFBQUFBQUFBQUFHQW9sYkxOM1pLT3h6RlNFS1NiOFRGTGNmOGFHdEZWeVdQZ1F4T05jMEUxOVRpREo0S2pFMWZDOXNRYVBWZ1ZLRndhNS9WL1JrQ3drMzFmQ0tBbHA3dzZQWGFIRGdma04wVE5raWhvd2hKL2JpWktuaVBkYnRLR0M0eGdQaTFmeHNrLzZUalVlOENta1dZMGR1ak5BVDFHWHhZRFZoT3M4ZUZ1eU1meTNKcTdPdjlKNmt6aU5tMFp5UVIyT3FmRVZmQURVZUhaKzBDeWhZalpvYm0rS0VUQUU3N0NINU1IOG42MHZua2pnNTl2T0pzcGNpY2JhZms1dXBSRm01dEY2WVM2UDR6SGVqQ2pMN0VDcEJHWmxiSlBqNzlJNEJLTG1XektSNDZveGNXQlE9PQ=='
+      },
+      {
+        key: 'x-ses-dkim-signature',
+        line: 'X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=gk/JiTos6xhQTcGWD6LKqaHIRvrIpMQaU9lxqw1hE0l7Gkmq4tH9mJDMRTnchZSAwk4732ISnngIVI6picA9qp9pUBXuFjnqe+qgAG44cKO9o1Ow0RT9fF/nPG+chVoJ1oynP4EYpIx6w7h3q8NvNskntF0raBdSGxFGcui+/3M=; c=relaxed/simple; s=224i4yxa5dv7c2xz3womw6peuasteono; d=amazonses.com; t=1605416268; v=1; bh=oq1qrbSsKEKW6CLEn8R34NOdGMCl5e7SAMDwLsmmu4Y=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;'
+      },
+      {
+        key: 'received',
+        line: 'Received: by mail-yb1-f174.google.com with SMTP id o144so3709341ybg.7\r\n' +
+          '        for <ses-s3-mail@e64apiru.numrock-k.com>; Sat, 14 Nov 2020 20:57:47 -0800 (PST)'
+      },
+      {
+        key: 'dkim-signature',
+        line: 'DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;\r\n' +
+          '        d=gmail.com; s=20161025;\r\n' +
+          '        h=mime-version:references:in-reply-to:from:date:message-id:subject:to;\r\n' +
+          '        bh=s/JOomBYxuSiRdsk1oy2uhwFAOw9QYCpJOqmiM5Ie7Y=;\r\n' +
+          '        b=ScAEfyl8CUevh8VLeSmQf44e+LnCRfzQCEx1bHPzFtVgsDgxI16SN4DnwgOg85P3KF\r\n' +
+          '         zl+ON15T5Ix/461z5nXJWp4Ci5bUS/9hCMm9r+8boPhoQWAd18uhe7MBqxvJKiwhwJ6v\r\n' +
+          '         Kv5o4awfxMPvZst7Kd+Bxg/xBROgZPYxvebxsURtVLkdBtcjK7XKLnWndEZZp4iYqLaS\r\n' +
+          '         lyZTRwCeFCiLBQ4cCHODadMZ8fBS9gnvIOqW1cEMi4Un0cq3m6OriOQX2JkmN6Vl15en\r\n' +
+          '         LerPVu+htze2ovm1Xdq7uxYW/JbBoBmd4pr8a8As7OIsZlkOkbunsv762Jc3iWdFtQfi\r\n' +
+          '         W30g=='
+      },
+      {
+        key: 'x-google-dkim-signature',
+        line: 'X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;\r\n' +
+          '        d=1e100.net; s=20161025;\r\n' +
+          '        h=x-gm-message-state:mime-version:references:in-reply-to:from:date\r\n' +
+          '         :message-id:subject:to;\r\n' +
+          '        bh=s/JOomBYxuSiRdsk1oy2uhwFAOw9QYCpJOqmiM5Ie7Y=;\r\n' +
+          '        b=ImrYlYU/QUzwed0z8v64CDTkMcONY4gM0VSfO4QJE2mFKM7/Hs+CSBANfHn6eLpCxs\r\n' +
+          '         cXSdnzIZnVIVSZhtx/NCD8A6YGDBhz5+eYdD64FR4I4YSDW+AdzF0GTX0yoBDNsL9kxV\r\n' +
+          '         U6roxt5u6DgYiF/TSbfDF6F0XqVmR0KlOO1HtDkz2vHCzheJ/VUgNBUTC4XCA79BcLHU\r\n' +
+          '         G/BSQhx7fonWEgC8lBzTMpLrgQVba61XfFQ97xMocglKTLDlj1o/Amdux7fcOFa1LdRF\r\n' +
+          '         TWEnhhylz2JJkcbb5UBIrvenWTvNeRuovjuP5VJp9X+PbRzC9LfhWTLG0uQDrtuBlq0x\r\n' +
+          '         HT5g=='
+      },
+      {
+        key: 'x-gm-message-state',
+        line: 'X-Gm-Message-State: AOAM5336+qOCb1jIHI31U5ZF3yGt72vykanGr8moKdKJD5a+yruCHj5b\r\n' +
+          '\tkKvZ99MnTNttS26xTB0FtBJM3m90DygCGDW7ocOjYHH+7LaNtg=='
+      },
+      {
+        key: 'x-google-smtp-source',
+        line: 'X-Google-Smtp-Source: ABdhPJyILfMH4+USkLDoGtiYmmpYing9WANByAwU49xabRHNg624XZBsuwlru+P31Uv0AIl+GPnzceaGV1e+PKQ9C1o='
+      },
+      {
+        key: 'x-received',
+        line: 'X-Received: by 2002:a25:3b87:: with SMTP id i129mr12091246yba.237.1605416267192;\r\n' +
+          ' Sat, 14 Nov 2020 20:57:47 -0800 (PST)'
+      },
+      { key: 'mime-version', line: 'MIME-Version: 1.0' },
+      {
+        key: 'references',
+        line: 'References: <20150301050000.86539038.1000.140346@mkrm.rakuten.com>'
+      },
+      {
+        key: 'in-reply-to',
+        line: 'In-Reply-To: <20150301050000.86539038.1000.140346@mkrm.rakuten.com>'
+      },
+      {
+        key: 'from',
+        line: 'From: =?UTF-8?B?6YeO5p2R5L+K5aSq?= <kandent914@gmail.com>'
+      },
+      { key: 'date', line: 'Date: Sun, 15 Nov 2020 13:57:34 +0900' },
+      {
+        key: 'message-id',
+        line: 'Message-ID: <CAMTa_=QDeQZ61uqn7Pwr55TO01XGFTGjx7kHj6NodnBT95Z6rw@mail.gmail.com>'
+      },
+      {
+        key: 'subject',
+        line: 'Subject: =?UTF-8?B?RndkOiDjgqvjg7zjg4nliKnnlKjjga7jgYrnn6XjgonjgZso5pys5Lq644GU5Yip55So?=\r\n' +
+          '\t=?UTF-8?B?5YiGKQ==?='
+      },
+      { key: 'to', line: 'To: ses-s3-mail@e64apiru.numrock-k.com' },
+      {
+        key: 'content-type',
+        line: 'Content-Type: multipart/alternative; boundary="000000000000529e7f05b41e1a67"'
+      }
+    ],
+    html: '<div dir="ltr"><br><br><div class="gmail_quote"><div dir="ltr" class="gmail_attr">---------- Forwarded message ---------<br>From: <strong class="gmail_sendername" dir="auto">楽天カード株式会社</strong> <span
+  dir="auto">&lt;<a href="mailto:info@mail.rakuten-card.co.jp">info@mail.rakuten-card.co.jp</a>&gt;</span><br>Date: 2020年11月14日(土) 15:49<br>Subject: カード利用のお知らせ(本人ご利用分)<br>To:  &lt;<a href="mailto:kandent914@gmail.com">kandent914@gmail.com</a>&gt;<br></div><br><br><u></u>\n' +
+      '\n' +
+      '\n' +
+      '\n' +
+      '\n' +
+      '\n' +
+      '<div bgcolor="#ffffff" text="#000000">\n' +
+      '<img src="https://r.rakuten.co.jp/3uV3IIdrq7jrctu5MnbcE74Q.gif?mpe=140346&amp;mpn=86539038" width="1" height="1">\n' +
+      '\n' +
+      '<div align="center" style="width:100%;max-width:700px;margin:0 auto">\n' +
+      '\t<table style="width:100%;max-width:700px;margin:0 auto" cellspacing="0" cellpadding="0" border="0" align="center">\n' +
+      '\t\t<tbody>\n' +
+      '\t\t\t<tr>\n' +
+      '\t\t\t\t<td style="max-width:700px;width:100%" bgcolor="#ffffff"><table style="max-width:700px;width:100%" cellspacing="0" cellpadding="0" border="0" align="center">\n' +
+      '\t\t\t\t\t\t<tbody>\n' +
+      '\t\t\t\t\t\t\t<tr>\n' +
+      '\t\t\t\t\t\t\t\t<td align="center"><table width="700" border="0" cellpadding="3" cellspacing="0" style="margin:0 auto">\n' +
+      '\t\t\t\t\t\t\t\t\t\t<tbody><tr>\n' +
+      '\t\t\t\t\t\t\t\t\t\t\t<td bgcolor="#ffffff"> </td>\n' +
+      '\t\t\t\t\t\t\t\t\t\t\t<td align="right"><a href="https://r10.to/hONHt2" target="_blank"><font size="-1">楽天カードを装った不審なメールにご注意ください</font></a></td>\n' +
+      '\t\t\t\t\t\t\t\t\t\t</tr>\n' +
+      '\t\t\t\t\t\t\t\t\t\t</tbody><tbody>\n' +
+      '\t\t\t\t\t\t\t\t\t\t\t<tr>\n' +
+      '\t\t\t\t\t\t\t\t\t\t\t\t<td height="35" width="86" bgcolor="#ffffff" rowspan="2"><a href="https://www.rakuten-card.co.jp/?scid=mi_rkc_oo_htmlml_logo11434" target="_blank"><img src="https://img.card.jp.rakuten-static.com/corp/pc/common/mail/rc-logo_Card_76x40@2x.png" width="76" height="40" border="0" alt="RakutenCard"></a></td>\n' +
+      '\t\t\t\t\t\t\t\t\t\t\t\t<td bgcolor="#c00000" width="590" height="28" align="left" style="text-align:left"><font size="-1" color="#ffffff"><b>カード利用お知らせメール</b></font></td>\n' +
+      '\t\t\t\t\t\t\t\t\t\t\t</tr>\n' +
+      '\t\t\t\t\t\t\t\t\t\t\t<tr>\n' +
+      '\t\t\t\t\t\t\t\t\t\t\t\t<td width="590" bgcolor="#eeeeee" align="left" style="text-align:left"><font size="-1"><img width="9" height="9" alt="" src="https://img.card.jp.rakuten-static.com/corp/pc/common/mail/bf0000.gif"><a href="https://www.rakuten-card.co.jp/e-navi/?scid=mi_rkc_oo_htmlml_headlogin11434" target="_blank">楽天e-NAVIへ</a>はこちらからログインできます。</font></td>\n' +
+      '\t\t\t\t\t\t\t\t\t\t\t</tr>\n' +
+      '\t\t\t\t\t\t\t\t\t\t</tbody>\n' +
+      '\t\t\t\t\t\t\t\t\t</table></td>\n' +
+      '\t\t\t\t\t\t\t</tr>\n' +
+      '\t\t\t\t\t\t\t<tr>\n' +
+      '\t\t\t\t\t\t\t\t<td align="center"><img src="https://img.card.jp.rakuten-static.com/corp/pc/common/mail/spacer.gif" width="700" height="20"></td>\n' +
+      '\t\t\t\t\t\t\t</tr>\n' +
+      '\t\t\t\t\t\t\t<tr>\n' +
+      '\t\t\t\t\t\t\t\t<td align="center"><table width="700" cellspacing="0" cellpadding="0" border="0">\n' +
+      '\t\t\t\t\t\t\t\t\t\t<tbody><tr>\n' +
+      '\t\t\t\t\t\t\t\t\t\t\t<td><hr color="#bf0000" width="100%"></td>\n' +
+      '\t\t\t\t\t\t\t\t\t\t</tr>\n' +
+      '\t\t\t\t\t\t\t\t\t\t<tr>\n' +
+      '\t\t\t\t\t\t\t\t\t\t\t<td align="center"><b>楽天カード（MasterCard）を<br>\n' +
+      '\t\t\t\t\t\t\t\t\t\t\t\tご利用いただき、誠にありがとうございます。</b></td>\n' +
+      '\t\t\t\t\t\t\t\t\t\t</tr>\n' +
+      '\t\t\t\t\t\t\t\t\t\t<tr>\n' +
+      '\t\t\t\t\t\t\t\t\t\t\t<td><hr color="#bf0000" width="100%"></td>\n' +
+      '\t\t\t\t\t\t\t\t\t\t</tr>\n' +
+      '\t\t\t\t\t\t\t\t\t\t<tr>\n' +
+      '\t\t\t\t\t\t\t\t\t\t\t<td bgcolor="#f4f4f4" align="center"><table cellspacing="10" cellpadding="5" border="0">\n' +
+      '\t\t\t\t\t\t\t\t\t\t\t\t\t<tbody><tr>\n' +
+      '\t\t\t\t\t\t\t\t\t\t\t\t\t\t<td align="center"><font size="-1"> お客様のカード利用情報が弊社に新たに登録されましたのでご案内いたします。<br>\n' +
+      '\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tカード利用お知らせメールは、加盟店から楽天カードのご利用データが弊社に到着した原則2営業日後にご指定のメールアドレスへ通知するサービスです。 </font></td>\n' +
+      '\t\t\t\t\t\t\t\t\t\t\t\t\t</tr>\n' +
+      '\t\t\t\t\t\t\t\t\t\t\t\t</tbody></table></td>\n' +
+      '\t\t\t\t\t\t\t\t\t\t</tr>\n' +
+      '\t\t\t\t\t\t\t\t\t</tbody></table></td>\n' +
+      '\t\t\t\t\t\t\t</tr>\n' +
+      '\t\t\t\t\t\t</tbody>\n' +
+      '\t\t\t\t\t</table></td>\n' +
+      '\t\t\t</tr>\n' +
+      '\t\t\t<tr>\n' +
+      '\t\t\t\t<td> </td>\n' +
+      '\t\t\t</tr>\n' +
+      '\t</tbody></table>\n' +
+      '\t\n' +
+      '\t<table width="700" border="0" cellpadding="0" cellspacing="0">\n' +
+      '\t\t<tbody><tr>\n' +
+      '\t\t\t<td><hr color="#bf0000" width="100%"></td>\n' +
+      '\t\t</tr>\n' +
+      '\t\t<tr>\n' +
+      '\t\t\t<td align="center"><b>カードご利用情報</b></td>\n' +
+      '\t\t</tr>\n' +
+      '\t\t<tr>\n' +
+      '\t\t\t<td><hr color="#bf0000" width="100%"></td>\n' +
+      '\t\t</tr>\n' +
+      '\t\t<tr>\n' +
+      '\t\t\t<td align="right"><a href="https://www.rakuten-card.co.jp/e-navi/members/statement/index.xhtml?scid=mi_rkc_oo_h-oml005" target="_blank"><font size="-1">＞すべてのご利用明細の確認はこちら</font></a></td>\n'
+  +
+      '\t\t</tr>\n' +
+      '\t\t<tr>\n' +
+      '\t\t\t<td bgcolor="#FFFFFF" align="center"><br>\n' +
+      '\t\t\t\t<form action="https://www.rakuten-card.co.jp/e-navi/members/payment/revolving/index.xhtml" method="GET" target="_blank">\n' +
+      '\t\t\t\t\t<table width="700" border="0" cellspacing="5" cellpadding="0">\n' +
+      '                <tbody><tr>\n' +
+      '                    <td><div align="left"><b><font size="-1">&lt;&lt;リボ払いへ変更可能なショッピングご利用分&gt;&gt;</font></b></div></td>\n' +
+      '                </tr>\n' +
+      '\t\t\t\t\t<tr>\n' +
+      '\t\t\t\t\t\t<td align="center">\n' +
+      '                        <input type="hidden" name="scid" value="mi_rkc_oo_h-oml001">\n' +
+      '                        <input type="hidden" name="en_from_mail" value="2">\n' +
+      '                        <table border="1">\n' +
+      '                            <tbody><tr>\n' +
+      '                                <td bgcolor="#bf0000"><font color="#ffffff" size="-1">ご利用一覧</font></td>\n' +
+      '                            </tr>\n' +
+      '                            <tr>\n' +
+      '                                <td>\n' +
+      '                                <table width="700" border="0" cellspacing="0" cellpadding="0" bgcolor="#a8a8a8">\n' +
+      '                                    <tbody><tr>\n' +
+      '                                    <td>\n' +
+      '                                    <table width="700" border="0" cellspacing="1" cellpadding="0">\n' +
+      '                                    <tbody><tr><td bgcolor="#FFFFFF"><table width="700" border="0" cellspacing="0" cellpadding="3">\n' +
+      '\t\t\t<tbody><tr bgcolor="#f4f4f4">\n' +
+      '\t\t\t<td width="60" align="center"><font color="#363636" size="-2"><b>リボ払い<br>変更選択</b></font></td>\n' +
+      '\t            <td width="60" align="center"><font color="#363636" size="-2"><b>利用日</b></font></td>\n' +
+      '\t            <td width="120" align="center"><font color="#363636" size="-2"><b>利用先</b></font></td>\n' +
+      '\t            <td width="45" align="center"><b><font color="#363636" size="-2">利用者</font></b></td>\n' +
+      '\t            <td width="45" align="center"><font color="#363636" size="-2"><b>支払<br>\n' +
+      '\t              方法</b></font></td>\n' +
+      '\t            <td width="95" align="center"><font color="#363636" size="-2"><b>利用金額</b></font></td>\n' +
+      '\t            <td width="62" align="center"><font color="#363636" size="-2"><b>支払月</b></font></td>\n' +
+      '\t            <td width="108" align="center"><font color="#363636" size="-2"><b>カード利用獲得<br>\n' +
+      '\t              ポイント</b></font></td>\n' +
+      '\t            <td width="78" align="center"><font color="#363636" size="-2"><b>ポイント獲得<br>予定月</b></font></td>\n' +
+      '\t\t\t</tr>\n' +
+      '  \t\t\t\t\t\t\t\t<tr><td align="center" bgcolor="#ffff00"><font size="-1"><input type="checkbox" name="uriage[]" value="100307"></font></td><td align="center"><font size="-1">2020/11/09</font></td><td align="left"><font size="-1"><a href="http://AMAZON.CO.JP" target="_blank">AMAZON.CO.JP</a></font></td><td align="center"><font size="-1">本人</font></td><td align="center"><font size="-1">1回</font></td><td align="right"><font size="-1">399 円</font></td><td align="center"><font size="-1">2020/12</font></td><td align="right"><font size="-1">3 ポイント</font></td><td align="right"><font size="-1">2020/12</font></td></tr>\n' +
+      '<tr><td colspan="5" align="right" bgcolor="#faf2eb" nowrap><font color="#363636" size="-1"><strong>リボ払い変更可能合計金額</strong></font></td><td align="right" bgcolor="#faf2eb" nowrap><font size="-1">399 円</font></td><td align="right" bgcolor="#faf2eb" nowrap><font color="#363636" size="-1"><strong>ポイント合計</strong></font></td><td align="right" bgcolor="#faf2eb" colspan="2" nowrap><font size="-1">3 ポイント</font></td></tr>\n' +
+      '                                    </tbody></table>\n' +
+      '                                    </td></tr></tbody></table>\n' +
+      '                                </td>\n' +
+      '                            </tr>\n' +
+      '                        </tbody></table>\n' +
+      '                                </td>\n' +
+      '                            </tr>\n' +
+      '                        </tbody></table>\n' +
+      '                    </td>\n' +
+      '                </tr>\n' +
+      '            </tbody></table>\n' +
+      '            \n' +
+      '            <table width="720" border="0" cellspacing="0" cellpadding="0">\n' +
+      '                            <tbody><tr>\n' +
+      '                              <td align="center">\n' +
+      '                                    <table id="m_2385381829558984129_____02">\n' +
+      '                                        <tbody><tr>\n' +
+      '\n' +
+      '\n' +
+      '\n' +
+      '\t\t\t\t\t\t\t\t\t\t\t              <td align="center" style="text-align:center">\n' +
+      '\n' +
+      '\n' +
+      '\n' +
+      '<input type="image" src="https://ci6.googleusercontent.com/proxy/uOZMaksFBuKvFh59-PAEMtop35cRvkGjOTWeTTN57Mhhs3SJuhghXXDM67yn4mnw5ot4IPUJC3aXIh7z4p7lSjrkHYOHFxNwlKhv4NlMQ64dehmmXtyNIJJMm-v0HjIyRTv-4KdzCog=s0-d-e1-ft#https://img.card.jp.rakuten-static.com/corp/pc/mail/auto/notice/190920/revo_check.png" width="300" height="60" alt="チェックして「リボ払い変更画面」へ" border="0">\n' +
+      '\n' +
+      '\n' +
+      '\n' +
+      '</td>\n' +
+      '</tr>\n' +
+      '<tr>\n' +
+      '              <td style="text-align:center">\n' +
+      '               <font color="#333333" size="-1">※「ご利用一覧」左列の「リボ払い変更選択」をチェックしてボタンをクリックすると、<br>\n' +
+      'リボ払いの変更画面へ移動します</font>\n' +
+      '              </td>\n' +
+      '            </tr>\n' +
+      '<tr>\n' +
+      '              <td><img src="https://img.card.jp.rakuten-static.com/corp/pc/common/mail/spacer.gif" alt="" border="0" height="10"></td>\t\t\t\t</tr><tr>\n' +
+      '                                    </tr></tbody></table>\n' +
+      '\n' +
+      '\t\t\t\t\t\t\t  </td>\n' +
+      '                            </tr>\n' +
+      '                        </tbody></table>\n' +
+      '\n' +
+      '\t\t\t\t\t\n' +
+      '\t\t\t\t\t\n' +
+      '\t\t\t\t</form>\n' +
+      '\t\t\t\t<br>\n' +
+      '\t\t\t\t<table width="680" border="0" cellspacing="5" cellpadding="0">\n' +
+      '\t\t\t\t\t<tbody><tr>\n' +
+      '\t\t\t\t\t\t<td><table width="685" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">\n' +
+      '\t\t\t\t\t\t\t\t<tbody><tr bgcolor="#FFFFFF">\n' +
+      '\t\t\t\t\t\t\t\t\t<td><br>\n' +
+      '\t\t\t\t\t\t\t\t\t\t<div align="left"><b><font size="-1">&lt;&lt;本メール掲載ご利用分の合計&gt;&gt;</font></b></div></td>\n' +
+      '\t\t\t\t\t\t\t\t</tr>\n' +
+      '\t\t\t\t\t\t\t\t<tr>\n' +
+      '\t\t\t\t\t\t\t\t\t<td><div align="center">\n' +
+      '\t\t\t\t\t\t\t\t\t\t\t<table width="678" border="0" cellspacing="0" cellpadding="0" bgcolor="#a8a8a8">\n' +
+      '\t\t\t\t\t\t\t\t\t\t\t\t<tbody><tr>\n' +
+      '\t\t\t\t\t\t\t\t\t\t\t\t\t<td><table border="0" cellspacing="1" cellpadding="3" width="678">\n' +
+      '\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<tbody><tr bgcolor="#FFFFFF">\n' +
+      '\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<td width="299" height="21" valign="top" bgcolor="#f4f4f4"><div align="left"><font size="-1">■当月お支払い予定の1回払い</font></div></td>\n' +
+      '\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<td bgcolor="#FFFFFF" width="60"><div align="right"><font size="-1">0件</font> </div></td>\n' +
+      '\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<td bgcolor="#FFFFFF"><div align="right"><font size="-1">0円</font> </div></td>\n' +
+      '\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</tr>\n' +
+      '\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<tr bgcolor="#FFFFFF">\n' +
+      '\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<td bgcolor="#f4f4f4" width="299" valign="top"><div align="left"><font size="-1">■翌月お支払い予定の1回払い</font> </div></td>\n' +
+      '\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<td width="60"><div align="right"><font size="-1">1件</font> </div></td>\n' +
+      '\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<td><div align="right"><font size="-1">399円</font> </div></td>\n' +
+      '\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</tr>\n' +
+      '\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<tr bgcolor="#FFFFFF">\n' +
+      '\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<td width="299" valign="top" bgcolor="#f4f4f4"><div align="left"><font size="-1">■分割/ボーナス払い/リボ払い</font> </div></td>\n' +
+      '\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<td width="60"><div align="right"><font size="-1">0件</font> </div></td>\n' +
+      '\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<td><div align="right"><font size="-1">0円</font> </div></td>\n' +
+      '\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</tr>\n' +
+      '\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<tr>\n' +
+      '\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<td width="299" valign="middle" bgcolor="#f4f4f4"><div align="right"><font size="-1"><b>合計</b></font> </div></td>\n' +
+      '\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<td width="60" bgcolor="#f4f4f4"><div align="right"><font size="-1"><b>1件</b></font> </div></td>\n' +
+      '\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<td bgcolor="#f4f4f4"><div align="right"><font size="-1"><b>399円</b></font> </div></td>\n' +
+      '\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</tr>\n' +
+      '\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<tr>\n' +
+      '\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<td bgcolor="#f4f4f4" colspan="2"><div align="right"><font size="-1"><b>合計獲得予定ポイント数</b></font> </div></td>\n' +
+      '\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<td bgcolor="#f4f4f4"><div align="right"> <font size="-1"><b>3ポイント</b></font></div></td>\n' +
+      '\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</tr>\n' +
+      '\t\t\t\t\t\t\t\t\t\t\t\t\t\t</tbody></table></td>\n' +
+      '\t\t\t\t\t\t\t\t\t\t\t\t</tr>\n' +
+      '\t\t\t\t\t\t\t\t\t\t\t</tbody></table>\n' +
+      '\t\t\t\t\t\t\t\t\t\t</div></td>\n' +
+      '\t\t\t\t\t\t\t\t</tr>\n' +
+      '\t\t\t\t\t\t\t</tbody></table>\n' +
+      '\t\t\t\t\t\t\t<table cellpadding="0" cellspacing="0">\n' +
+      '\t\t\t\t\t\t\t\t\n' +
+      '\t\t\t\t\t\t\t</table></td>\n' +
+      '\t\t\t\t\t</tr>\n' +
+      '\t\t\t\t</tbody></table>\n' +
+      '\t\t\t\t<table width="700" border="0" cellspacing="5" cellpadding="0">\n' +
+      '\t\t\t\t\t<tbody><tr>\n' +
+      '\t\t\t\t\t\t<td><table width="690" border="0" cellspacing="5" cellpadding="0">\n' +
+      '\t\t\t\t\t\t\t\t<tbody><tr>\n' +
+      '\t\t\t\t\t\t\t\t\t<td><div align="left"><a href="https://www.rakuten-card.co.jp/service/information_mail/?scid=mi_rkc_oo_sales-pc-html_note#sales-note" target="_blank"><font size="-1">&gt;&gt;カード利用お知らせメ
+  ールの注意事項</font></a></div></td>\n' +
+      '\t\t\t\t\t\t\t\t</tr>\n' +
+      '\t\t\t\t\t\t\t\t<tr>\n' +
+      '\t\t\t\t\t\t\t\t\t<td><div align="left"><a href="https://r10.to/hvLsOc" target="_blank"><font size="-1">&gt;&gt;メールアドレスのご変更</font></a></div></td>\n' +
+      '\t\t\t\t\t\t\t\t</tr>\n' +
+      '\t\t\t\t\t\t\t\t\t<tr>\n' +
+      '\t\t\t\t\t\t\t\t\t<td><img src="https://img.card.jp.rakuten-static.com/corp/pc/common/mail/spacer.gif" width="1" height="5" alt=""></td>\n' +
+      '\t\t\t\t\t\t\t\t</tr>\n' +
+      '\t\t\t\t\t\t\t\t\t<tr>\n' +
+      '\t\t\t\t\t\t\t\t\t<td><div align="left"><a href="https://www.rakuten-card.co.jp/service/information_mail/" target="_blank"><font size="-1">&gt;&gt;カード利用お知らせメールの概要について</font></a></div></td>\n' +    '\t\t\t\t\t\t\t\t</tr>\n' +
+      '\t\t\t\t\t\t\t\t<tr>\n' +
+      '\t\t\t\t\t\t\t\t\t<td><div align="left"><a href="https://www.rakuten-card.co.jp/contact/security/?scid=mi_rkc_oo_cardusagemail_to_contactsecurity" target="_blank"><font size="-1">&gt;&gt;万が一ご利用に覚えのない
+  場合は、よくあるお問い合わせ事例をご確認ください。</font></a></div></td>\n' +
+      '\t\t\t\t\t\t\t\t</tr>\n' +
+      '\t\t\t\t\t\t\t\t<tr>\n' +
+      '\t\t\t\t\t\t\t\t\t<td><img src="https://img.card.jp.rakuten-static.com/corp/pc/common/mail/spacer.gif" width="1" height="5" alt=""></td>\n' +
+      '\t\t\t\t\t\t\t\t</tr>\n' +
+      '\t\t\t\t\t\t\t</tbody></table></td>\n' +
+      '\t\t\t\t\t</tr>\n' +
+      '\t\t\t\t</tbody></table>\n' +
+      '\t\t\t\t<table width="700" border="0" cellspacing="5" cellpadding="0">\n' +
+      '\t\t\t\t\t<tbody><tr>\n' +
+      '\t\t\t\t\t\t<td>\n' +
+      '\t\t\t\t\t\t\t<table width="685" border="0" cellpadding="0" cellspacing="0">\n' +
+      '\t\t\t\t\t\t\t\t<tbody><tr>\n' +
+      '                                    <td valign="top"><font color="#bf0000" size="-1"><b>【</b></font></td>\n' +
+      '\t\t\t\t\t\t\t\t\t<td align="left"><font color="#bf0000" size="-1"><b>リボ払いへの変更に関する注意事項】</b></font></td>\n' +
+      '\t\t\t\t\t\t\t\t</tr>\n' +
+      '\t\t\t\t\t\t\t\t<tr>\n' +
+      '\t\t\t\t\t\t\t\t\t<td valign="top"><font color="#333333" size="-1">・</font></td>\n' +
+      '                                    <td align="left"><font color="#333333" size="-1">自動リボサービスにご登録いただいた後のご利用分は、&lt;&lt;リボ払いへ変更できないショッピングご利用分&gt;&gt;のご利用一覧へ含ま
+  れております。なお、自動リボサービスにご登録にいただいている場合であっても、割賦枠を超えたご利用分は、リボ払いではなく1回払いとなります。（お客様の<a href="https://r10.to/hssYt3" target="_blank">ご利用可能額のご確認は
+  こちら</a>）</font></td>\n' +
+      '\t\t\t\t\t\t\t\t</tr>\n' +
+      '\t\t\t\t\t\t\t</tbody></table></td>\n' +
+      '\t\t\t\t\t</tr>\n' +
+      '\t\t\t\t\t<tr>\n' +
+      '                        <td><font color="#333333" size="-1">※カードの年会費・分割払い(3～36回)・ボーナス2回払いのご利用分や家賃のお支払いなど一部の加盟店のご利用分については、リボ払いへの変更はできません。</font
+  ></td>\n' +
+      '\t\t\t\t\t</tr>\n' +
+      '\t\t\t\t</tbody></table>\n' +
+      '\t\t\t\t</td>\n' +
+      '\t\t</tr>\n' +
+      '\t</tbody></table>\n' +
+      '\t \n' +
+      '\t\n' +
+      '\t<table width="700" border="0" cellpadding="0" cellspacing="0">\n' +
+      '\t\t<tbody><tr>\n' +
+      '\t\t\t<td><hr color="#bf0000" width="100%"></td>\n' +
+      '\t\t</tr>\n' +
+      '\t\t<tr>\n' +
+      '\t\t\t<td align="center"><b>楽天e-NAVIでご利用いただけるお支払いサポート機能</b></td>\n' +
+      '\t\t</tr>\n' +
+      '\t\t<tr>\n' +
+      '\t\t\t<td><hr color="#bf0000" width="100%"></td>\n' +
+      '\t\t</tr>\n' +
+      '\t\t<tr>\n' +
+      '\t\t\t<td align="center"><table width="680" height="150" border="0" cellpadding="0" cellspacing="0">\n' +
+      '\t\t\t\t\t<tbody><tr>\n' +
+      '\t\t\t\t\t\t<td colspan="7"><img src="https://img.card.jp.rakuten-static.com/corp/pc/common/mail/spacer.gif" width="680" height="18" alt=""></td>\n' +
+      '\t\t\t\t\t</tr>\n' +
+      '\t\t\t\t\t<tr>\n' +
+      '\t\t\t\t\t\t<td rowspan="4"><img src="https://img.card.jp.rakuten-static.com/corp/pc/common/mail/spacer.gif" width="38" height="132" alt=""></td>\n' +
+      '\t\t\t\t\t\t<td><a href="https://www.rakuten-card.co.jp/e-navi/members/statement/index.xhtml?scid=mi_rkc_oo_h-oml007" target="_blank"><img src="https://img.card.jp.rakuten-static.com/corp/pc/mail/auto/notice/110801/sales/091030service_03_02.gif" width="178" height="53" alt="" border="0"></a></td>\n' +
+      '\t\t\t\t\t\t<td rowspan="4"><img src="https://img.card.jp.rakuten-static.com/corp/pc/common/mail/spacer.gif" width="35" height="132" alt=""></td>\n' +
+      '\t\t\t\t\t\t<td><a href="https://www.rakuten-card.co.jp/e-navi/members/credit-limit/balance/index.xhtml?scid=mi_rkc_oo_h-oml008" target="_blank"><img src="https://img.card.jp.rakuten-static.com/corp/pc/mail/auto/notice/110801/sales/091030service_05_02.gif" width="178" height="53" alt="" border="0"></a></td>\n' +
+      '\t\t\t\t\t\t<td rowspan="4"><img src="https://img.card.jp.rakuten-static.com/corp/pc/common/mail/spacer.gif" width="35" height="132" alt=""></td>\n' +
+      '\t\t\t\t\t\t<td><a href="https://www.rakuten-card.co.jp/e-navi/members/credit-limit/availability/index.xhtml?scid=mi_rkc_oo_h-oml009" target="_blank"><img src="https://img.card.jp.rakuten-static.com/corp/pc/mail/auto/notice/110801/sales/091030service_07_02.gif" width="178" height="53" alt="" border="0"></a></td>\n' +
+      '\t\t\t\t\t\t<td rowspan="4"><img src="https://img.card.jp.rakuten-static.com/corp/pc/common/mail/spacer.gif" width="38" height="132" alt=""></td>\n' +
+      '\t\t\t\t\t</tr>\n' +
+      '\t\t\t\t\t<tr>\n' +
+      '\t\t\t\t\t\t<td><img src="https://img.card.jp.rakuten-static.com/corp/pc/common/mail/spacer.gif" width="178" height="14" alt=""></td>\n' +
+      '\t\t\t\t\t\t<td><img src="https://img.card.jp.rakuten-static.com/corp/pc/common/mail/spacer.gif" width="178" height="14" alt=""></td>\n' +
+      '\t\t\t\t\t\t<td><img src="https://img.card.jp.rakuten-static.com/corp/pc/common/mail/spacer.gif" width="178" height="14" alt=""></td>\n' +
+      '\t\t\t\t\t</tr>\n' +
+      '\t\t\t\t\t<tr>\n' +
+      '\t\t\t\t\t\t<td><a href="https://www.rakuten-card.co.jp/e-navi/index.xhtml?q=revo&amp;scid=mi_rkc_oo_h-soml010" target="_blank"><img src="https://img.card.jp.rakuten-static.com/corp/pc/mail/auto/notice/110801/sales/091030service_12_02.gif" width="178" height="53" alt="" border="0"></a></td>\n' +
+      '\t\t\t\t\t\t<td><a href="https://www.rakuten-card.co.jp/e-navi/members/payment/auto-revolving/index.xhtml?scid=mi_rkc_oo_h-oml011" target="_blank"><img src="https://img.card.jp.rakuten-static.com/corp/pc/mail/auto/notice/110801/sales/091030service_13_02.gif" width="178" height="53" alt="" border="0"></a></td>\n' +
+      '\t\t\t\t\t\t<td><a href="https://www.rakuten-card.co.jp/e-navi/members/cash-advance/guide/index.xhtml?scid=mi_rkc_oo_h-oml012" target="_blank"><img src="https://img.card.jp.rakuten-static.com/corp/pc/mail/auto/notice/110801/sales/091030service_15_02.gif" width="178" height="53" alt="" border="0"></a></td>\n' +
+      '\t\t\t\t\t</tr>\n' +
+      '\t\t\t\t\t<tr>\n' +
+      '\t\t\t\t\t\t<td><img src="https://img.card.jp.rakuten-static.com/corp/pc/common/mail/spacer.gif" width="178" height="12" alt=""></td>\n' +
+      '\t\t\t\t\t\t<td><img src="https://img.card.jp.rakuten-static.com/corp/pc/common/mail/spacer.gif" width="178" height="12" alt=""></td>\n' +
+      '\t\t\t\t\t\t<td><img src="https://img.card.jp.rakuten-static.com/corp/pc/common/mail/spacer.gif" width="178" height="12" alt=""></td>\n' +
+      '\t\t\t\t\t</tr>\n' +
+      '\t\t\t\t</tbody></table>\n' +
+      '\t\t\t\t<br></td>\n' +
+      '\t\t</tr>\n' +
+      '\t</tbody></table>\n' +
+      '\t \n' +
+      '\t\n' +
+      '\t<table width="700" border="0" cellpadding="0" cellspacing="0">\n' +
+      '\t\t<tbody><tr>\n' +
+      '\t\t\t<td><hr color="#bf0000" width="100%"></td>\n' +
+      '\t\t</tr>\n' +
+      '\t\t<tr>\n' +
+      '\t\t\t<td align="center"><b>安心してカードをご利用いただくために</b></td>\n' +
+      '\t\t</tr>\n' +
+      '\t\t<tr>\n' +
+      '\t\t\t<td><hr color="#bf0000" width="100%"></td>\n' +
+      '\t\t</tr>\n' +
+      '\t\t<tr>\n' +
+      '\t\t\t<td align="left"><font size="-1">カード利用お知らせメールのほかに、さまざまなセキュリティに関するサービスやコンテンツをご用意しております。こちらもぜひご利用ください。</font></td>\n' +
+      '\t\t</tr>\n' +
+      '\t\t<tr>\n' +
+      '\t\t\t<td align="center"><table width="680" height="150" border="0" cellpadding="0" cellspacing="0">\n' +
+      '\t\t\t\t\t<tbody><tr>\n' +
+      '\t\t\t\t\t\t<td colspan="7"><img src="https://img.card.jp.rakuten-static.com/corp/pc/common/mail/spacer.gif" width="680" height="24" alt=""></td>\n' +
+      '\t\t\t\t\t</tr>\n' +
+      '\t\t\t\t\t<tr>\n' +
+      '\t\t\t\t\t\t<td style="vertical-align:top;font-size:0;width:50%;max-width:350px;height:auto" align="center"><a href="https://r10.to/hzey6Z" target="_blank"><img src="https://img.card.jp.rakuten-static.com/corp/pc/mail/campaign/sales/use/security004.gif" alt="インターネット犯罪にご注意ください" width="100%" border="0" style="max-width:319px"></a></td>\n' +
+      '\t\t\t\t\t\t<td style="vertical-align:top;font-size:0;width:50%;max-width:350px;height:auto" align="center"><a href="https://r10.to/hzPuTM" target="_blank"><img src="https://img.card.jp.rakuten-static.com/corp/pc/mail/campaign/sales/use/security001.gif" alt="本人認証サービス" width="100%" border="0" style="max-width:319px"></a></td>\n' +
+      '\t\t\t\t\t</tr>\n' +
+      '\t\t\t\t\t<tr>\n' +
+      '\t\t\t\t\t\t<td colspan="7"><img src="https://img.card.jp.rakuten-static.com/corp/pc/common/mail/spacer.gif" width="680" height="24" alt=""></td>\n' +
+      '\t\t\t\t\t</tr>\n' +
+      '\t\t\t\t</tbody></table>\n' +
+      '\t\t\t\t<br></td>\n' +
+      '\t\t</tr>\n' +
+      '\t</tbody></table>\n' +
+      '\t \n' +
+      '\t\n' +
+      '\t<table width="700" border="0" cellpadding="0" cellspacing="0">\n' +
+      '\t\t<tbody><tr>\n' +
+      '\t\t\t<td><hr color="#bf0000" width="100%"></td>\n' +
+      '\t\t</tr>\n' +
+      '\t\t<tr>\n' +
+      '\t\t\t<td align="center"><b>楽天カードの取り組み</b></td>\n' +
+      '\t\t</tr>\n' +
+      '\t\t<tr>\n' +
+      '\t\t\t<td><hr color="#bf0000" width="100%"></td>\n' +
+      '\t\t</tr>\n' +
+      '\t\t<tr>\n' +
+      '\t\t\t<td align="left"><font size="-1">お客様より頂戴したご意見・ご要望の一つひとつを真摯に受け止め、さらなる安心と信頼をご提供できるよう、日々改善に取り組んでおります。</font></td>\n' +
+      '\t\t</tr>\n' +
+      '\t\t<tr>\n' +
+      '\t\t\t<td colspan="7"><img src="https://img.card.jp.rakuten-static.com/corp/pc/common/mail/spacer.gif" width="680" height="18" alt=""></td>\n' +
+      '\t\t</tr>\n' +
+      '\t\t<tr>\n' +
+      '\t\t\t<td style="vertical-align:top;font-size:0;width:100%;height:auto" align="center"><a href="https://r10.to/hsgGv4" target="_blank"><img src="https://img.card.jp.rakuten-static.com/corp/pc/mail/campaign/sales/use/contents05.jpg" style="max-width:319px" alt="お客様の声を実現しました。" width="100%" border="0"><br>\n' +
+      '\t\t\t\t<font size="-1">&gt;&gt;お客様の声への取り組みについてはこちらから</font></a></td>\n' +
+      '\t\t</tr>\n' +
+      '\t\t<tr>\n' +
+      '\t\t\t<td> </td>\n' +
+      '\t\t</tr>\n' +
+      '\t</tbody></table>\n' +
+      '\t\n' +
+      '\t\n' +
+      '\t<table width="700" border="0" cellpadding="0" cellspacing="0">\n' +
+      '\t\t<tbody><tr>\n' +
+      '\t\t\t<td><hr color="#bf0000" width="100%"></td>\n' +
+      '\t\t</tr>\n' +
+      '\t\t<tr>\n' +
+      '\t\t\t<td align="center"><b>お得な情報</b></td>\n' +
+      '\t\t</tr>\n' +
+      '\t\t<tr>\n' +
+      '\t\t\t<td><hr color="#bf0000" width="100%"></td>\n' +
+      '\t\t</tr>\n' +
+      '\t\t<tr>\n' +
+      '\t\t\t<td align="center"><table style="max-width:700px" width="100%" cellspacing="0" cellpadding="10" border="0" align="center">\n' +
+      '\t\t\t\t\t<tbody>\n' +
+      '\t\t\t\t\t\t\n' +
+      '\n' +
+      '\n' +
+      '   \n' +
+      '<tr>\n' +
+      '<td style="vertical-align:top;font-size:0;width:50%;height:auto" align="center"><a href="https://r10.to/hVRvPM" target="_blank"><img src="http://img.card.jp.rakuten-static.com/corp/pc/mail/auto/notice/201009/240x200.png" alt="楽天モバイル Rakuten UN-LIMIT V" width="100%" border="0" style="max-width:240px"></a></td>\n' +
+      '<td style="vertical-align:top;font-size:0;width:50%;height:auto" align="center"><a href="https://r10.to/hfNKai" target="_blank"><img src="https://img.card.jp.rakuten-static.com/corp/pc/mail/auto/notice/170901/20170901_XLO_shop_240x200.gif" alt="お店からの特典が届いています！" width="100%" border="0" style="max-width:240px"></a></td>\n' +
+      '</tr>\n' +
+      '\n' +
+      '\n' +
+      '\n' +
+      '\t\t\t\t\t\t\n' +
+      '\t\t\t\t\t\t\n' +
+      '\t\t\t\t\t</tbody>\n' +
+      '\t\t\t\t</table></td>\n' +
+      '\t\t</tr>\n' +
+      '\t\t<tr>\n' +
+      '\t\t\t<td> </td>\n' +
+      '\t\t</tr>\n' +
+      '\t</tbody></table>\n' +
+      '\t \n' +
+      '\t\n' +
+      '\t<table cellspacing="0" cellpadding="0" bgcolor="#bf0000" border="0">\n' +
+      '\t\t<tbody>\n' +
+      '\t\t\t<tr>\n' +
+      '\t\t\t\t<td align="left" style="vertical-align:top;font-size:0"><img src="https://img.card.jp.rakuten-static.com/corp/pc/common/mail/bg_redline.gif" width="700" height="2" alt=""></td>\n' +
+      '\t\t\t</tr>\n' +
+      '\t\t</tbody>\n' +
+      '\t</table>\n' +
+      '\t<br>\n' +
+      '\t<table cellspacing="0" cellpadding="0" width="700" border="0">\n' +
+      '\t\t<tbody><tr>\n' +
+      '\t\t\t<td><div align="left">\n' +
+      '\t\t\t\t\t<table cellspacing="3" cellpadding="0" border="0">\n' +
+      '\t\t\t\t\t\t<tbody>\n' +
+      '\t\t\t\t\t\t\t<tr valign="top">\n' +
+      '\t\t\t\t\t\t\t\t<td align="left"><font size="-1">■</font></td>\n' +
+      '\t\t\t\t\t\t\t\t<td align="left"><font size="-1">カード利用お知らせメールの登録・変更は、<a href="https://www.rakuten-card.co.jp/e-navi/members/settings/card-usage-email/index.xhtml?scid=mi_rkc_oo_usage_footer_11433" target="_blank">楽天e-NAVI</a>よりお手続きください。</font></td>\n' +
+      '\t\t\t\t\t\t\t</tr>\n' +
+      '\t\t\t\t\t\t\t<tr valign="top">\n' +
+      '\t\t\t\t\t\t\t\t<td align="left"><font size="-1">■</font></td>\n' +
+      '\t\t\t\t\t\t\t\t<td align="left"><font size="-1">一部メールの受信環境によって正しく表示されない場合がございます。本メールに記載のご利用明細は、楽天e-NAVIの<a href="https://www.rakuten-card.co.jp/e-navi/members/statement/index.xhtml" target="_blank">ご利用明細</a>にてご確認ください。</font></td>\n' +
+      '\t\t\t\t\t\t\t</tr>\n' +
+      '\t\t\t\t\t\t\t<tr valign="top">\n' +
+      '\t\t\t\t\t\t\t\t<td align="left"><font size="-1">■</font></td>\n' +
+      '\t\t\t\t\t\t\t\t<td align="left"><font size="-1">本メールアドレスは配信専用のため、お問い合わせの際は<a href="https://www.rakuten-card.co.jp/support/" target="_blank">お客様サポート</a>をご確認ください。</font></td>\n' +
+      '\t\t\t\t\t\t\t</tr>\n' +
+      '\t\t\t\t\t\t\t<tr valign="top">\n' +
+      '\t\t\t\t\t\t\t\t<td align="left" colspan="2"> </td>\n' +
+      '\t\t\t\t\t\t\t</tr>\n' +
+      '\t\t\t\t\t\t</tbody>\n' +
+      '\t\t\t\t\t</table>\n' +
+      '\t\t\t\t</div>\n' +
+      '\t\t\t\t<div align="center">\n' +
+      '\t\t\t\t\t<table cellspacing="3" cellpadding="0" border="0">\n' +
+      '\t\t\t\t\t\t<tbody>\n' +
+      '\t\t\t\t\t\t\t<tr valign="top">\n' +
+      '\t\t\t\t\t\t\t\t<td colspan="2" align="center"><font size="-1"><a href="https://www.rakuten-card.co.jp/e-navi/?scid=mi_rkc_oo_htmlml_footlogin11434" target="_blank">楽天e-NAVIのご利用開始手続き/ログイン</a>│<a href="https://www.rakuten-card.co.jp/info/rules/maintenance/?scid=mi_rkc_oo_htmlml_mainte11434" target="_blank">楽天e-NAVI メンテナンス情報</a></font></td>\n' +
+      '\t\t\t\t\t\t\t</tr>\n' +
+      '\t\t\t\t\t\t\t<tr valign="top">\n' +
+      '\t\t\t\t\t\t\t\t<td align="left" colspan="2"> </td>\n' +
+      '\t\t\t\t\t\t\t</tr>\n' +
+      '\t\t\t\t\t\t</tbody>\n' +
+      '\t\t\t\t\t</table>\n' +
+      '\t\t\t\t</div></td>\n' +
+      '\t\t</tr>\n' +
+      '\t</tbody></table>\n' +
+      '\t<table cellspacing="0" cellpadding="0" bgcolor="#bf0000" border="0">\n' +
+      '\t\t<tbody>\n' +
+      '\t\t\t<tr>\n' +
+      '\t\t\t\t<td align="left" style="vertical-align:top;font-size:0"><img src="https://img.card.jp.rakuten-static.com/corp/pc/common/mail/bg_redline.gif" width="700" height="2" alt=""></td>\n' +
+      '\t\t\t</tr>\n' +
+      '\t\t</tbody>\n' +
+      '\t</table>\n' +
+      '\t<br>\n' +
+      '\t<div align="center">\n' +
+      '\t\t<table cellspacing="3" cellpadding="0" border="0">\n' +
+      '\t\t\t<tbody>\n' +
+      '\t\t\t\t<tr valign="top">\n' +
+      '\t\t\t\t\t<td align="center" colspan="2"><font size="-1">発行元  楽天カード株式会社<br>\n' +
+      '\t\t\t\t\t\t<a href="https://www.rakuten-card.co.jp/?scid=mi_rkc_oo_htmlml_kctop11434" target="_blank">https://www.rakuten-card.co.jp/</a><br>\n' +
+      '\t\t\t\t\t\t© Rakuten Card Co., Ltd.</font></td>\n' +
+      '\t\t\t\t</tr>\n' +
+      '\t\t\t</tbody>\n' +
+      '\t\t</table>\n' +
+      '\t</div>\n' +
+      '\t\n' +
+      '</div>\n' +
+      '</div>\n' +
+      '</div></div>\n',
+    text: '---------- Forwarded message ---------\n' +
+      'From: 楽天カード株式会社 <info@mail.rakuten-card.co.jp>\n' +
+      'Date: 2020年11月14日(土) 15:49\n' +
+      'Subject: カード利用のお知らせ(本人ご利用分)\n' +
+      'To: <kandent914@gmail.com>\n' +
+      '\n' +
+      '\n' +
+      '  楽天カードを装った不審なメールにご注意ください <https://r10.to/hONHt2>\n' +
+      '[image: RakutenCard]\n' +
+      '<https://www.rakuten-card.co.jp/?scid=mi_rkc_oo_htmlml_logo11434>\n' +
+      '*カード利用お知らせメール*\n' +
+      '楽天e-NAVIへ\n' +
+      '<https://www.rakuten-card.co.jp/e-navi/?scid=mi_rkc_oo_htmlml_headlogin11434>\n' +
+      'はこちらからログインできます。\n' +
+      '------------------------------\n' +
+      '\n' +
+      '*楽天カード（MasterCard）を ご利用いただき、誠にありがとうございます。*\n' +
+      '------------------------------\n' +
+      'お客様のカード利用情報が弊社に新たに登録されましたのでご案内いたします。\n' +
+      'カード利用お知らせメールは、加盟店から楽天カードのご利用データが弊社に到着した原則2営業日後にご指定のメールアドレスへ通知するサービスです。\n' +
+      '\n' +
+      '------------------------------\n' +
+      '*カードご利用情報*\n' +
+      '------------------------------\n' +
+      '＞すべてのご利用明細の確認はこちら\n' +
+      '<https://www.rakuten-card.co.jp/e-navi/members/statement/index.xhtml?scid=mi_rkc_oo_h-oml005>\n' +
+      '\n' +
+      '*<<リボ払いへ変更可能なショッピングご利用分>>*\n' +
+      'ご利用一覧\n' +
+      '\n' +
+      '*リボ払い変更選択* *利用日* *利用先* *利用者*\n' +
+      '*支払 方法* *利用金額* *支払月*\n' +
+      '*カード利用獲得 ポイント*\n' +
+      '*ポイント獲得予定月*\n' +
+      '2020/11/09 AMAZON.CO.JP 本人 1回 399 円 2020/12 3 ポイント 2020/12\n' +
+      '*リボ払い変更可能合計金額* 399 円 *ポイント合計* 3 ポイント\n' +
+      '※「ご利用一覧」左列の「リボ払い変更選択」をチェックしてボタンをクリックすると、\n' +
+      'リボ払いの変更画面へ移動します\n' +
+      '\n' +
+      '\n' +
+      '*<<本メール掲載ご利用分の合計>>*\n' +
+      '■当月お支払い予定の1回払い\n' +
+      '0件\n' +
+      '0円\n' +
+      '■翌月お支払い予定の1回払い\n' +
+      '1件\n' +
+      '399円\n' +
+      '■分割/ボーナス払い/リボ払い\n' +
+      '0件\n' +
+      '0円\n' +
+      '*合計*\n' +
+      '*1件*\n' +
+      '*399円*\n' +
+      '*合計獲得予定ポイント数*\n' +
+      '*3ポイント*\n' +
+      '>>カード利用お知らせメールの注意事項\n' +
+      '<https://www.rakuten-card.co.jp/service/information_mail/?scid=mi_rkc_oo_sales-pc-html_note#sales-note>\n' +
+      '>>メールアドレスのご変更 <https://r10.to/hvLsOc>\n' +
+      '>>カード利用お知らせメールの概要について\n' +
+      '<https://www.rakuten-card.co.jp/service/information_mail/>\n' +
+      '>>万が一ご利用に覚えのない場合は、よくあるお問い合わせ事例をご確認ください。\n' +
+      '<https://www.rakuten-card.co.jp/contact/security/?scid=mi_rkc_oo_cardusagemail_to_contactsecurity>\n' +
+      '*【* *リボ払いへの変更に関する注意事項】*\n' +
+      '・\n' +
+      '自動リボサービスにご登録いただいた後のご利用分は、<<リボ払いへ変更できないショッピングご利用分>>のご利用一覧へ含まれております。なお、自動リボサービスにご登録にいただいている場合であっても、割賦枠を超えたご利用分
+  は、リボ払いではなく1回払いとなります。（お客様の\n' +
+      'ご利用可能額のご確認はこちら <https://r10.to/hssYt3>）\n' +
+      '※カードの年会費・分割払い(3～36回)・ボーナス2回払いのご利用分や家賃のお支払いなど一部の加盟店のご利用分については、リボ払いへの変更はできません。\n' +
+      '------------------------------\n' +
+      '*楽天e-NAVIでご利用いただけるお支払いサポート機能*\n' +
+      '------------------------------\n' +
+      '<https://www.rakuten-card.co.jp/e-navi/members/statement/index.xhtml?scid=mi_rkc_oo_h-oml007>\n' +
+      '<https://www.rakuten-card.co.jp/e-navi/members/credit-limit/balance/index.xhtml?scid=mi_rkc_oo_h-oml008>\n' +
+      '<https://www.rakuten-card.co.jp/e-navi/members/credit-limit/availability/index.xhtml?scid=mi_rkc_oo_h-oml009>\n' +
+      '<https://www.rakuten-card.co.jp/e-navi/index.xhtml?q=revo&scid=mi_rkc_oo_h-soml010>\n' +
+      '<https://www.rakuten-card.co.jp/e-navi/members/payment/auto-revolving/index.xhtml?scid=mi_rkc_oo_h-oml011>\n' +
+      '<https://www.rakuten-card.co.jp/e-navi/members/cash-advance/guide/index.xhtml?scid=mi_rkc_oo_h-oml012>\n' +
+      '\n' +
+      '------------------------------\n' +
+      '*安心してカードをご利用いただくために*\n' +
+      '------------------------------\n' +
+      'カード利用お知らせメールのほかに、さまざまなセキュリティに関するサービスやコンテンツをご用意しております。こちらもぜひご利用ください。\n' +
+      '[image: インターネット犯罪にご注意ください] <https://r10.to/hzey6Z> [image: 本人認証サービス]\n' +
+      '<https://r10.to/hzPuTM>\n' +
+      '\n' +
+      '------------------------------\n' +
+      '*楽天カードの取り組み*\n' +
+      '------------------------------\n' +
+      'お客様より頂戴したご意見・ご要望の一つひとつを真摯に受け止め、さらなる安心と信頼をご提供できるよう、日々改善に取り組んでおります。\n' +
+      '[image: お客様の声を実現しました。]\n' +
+      '>>お客様の声への取り組みについてはこちらから <https://r10.to/hsgGv4>\n' +
+      '\n' +
+      '------------------------------\n' +
+      '*お得な情報*\n' +
+      '------------------------------\n' +
+      '[image: 楽天モバイル Rakuten UN-LIMIT V] <https://r10.to/hVRvPM> [image:\n' +
+      'お店からの特典が届いています！] <https://r10.to/hfNKai>\n' +
+      '\n' +
+      '\n' +
+      '■ カード利用お知らせメールの登録・変更は、楽天e-NAVI\n' +
+      '<https://www.rakuten-card.co.jp/e-navi/members/settings/card-usage-email/index.xhtml?scid=mi_rkc_oo_usage_footer_11433>\n' +
+      'よりお手続きください。\n' +
+      '■ 一部メールの受信環境によって正しく表示されない場合がございます。本メールに記載のご利用明細は、楽天e-NAVIのご利用明細\n' +
+      '<https://www.rakuten-card.co.jp/e-navi/members/statement/index.xhtml>\n' +
+      'にてご確認ください。\n' +
+      '■ 本メールアドレスは配信専用のため、お問い合わせの際はお客様サポート\n' +
+      '<https://www.rakuten-card.co.jp/support/>をご確認ください。\n' +
+      '\n' +
+      '楽天e-NAVIのご利用開始手続き/ログイン\n' +
+      '<https://www.rakuten-card.co.jp/e-navi/?scid=mi_rkc_oo_htmlml_footlogin11434>\n' +
+      '│楽天e-NAVI メンテナンス情報\n' +
+      '<https://www.rakuten-card.co.jp/info/rules/maintenance/?scid=mi_rkc_oo_htmlml_mainte11434>\n' +
+      '\n' +
+      '\n' +
+      '発行元  楽天カード株式会社\n' +
+      'https://www.rakuten-card.co.jp/\n' +
+      '<https://www.rakuten-card.co.jp/?scid=mi_rkc_oo_htmlml_kctop11434>\n' +
+      '© Rakuten Card Co., Ltd.\n',
+    textAsHtml: '<p>---------- Forwarded message ---------<br/>From: &#x697D;&#x5929;&#x30AB;&#x30FC;&#x30C9;&#x682A;&#x5F0F;&#x4F1A;&#x793E; &lt;<a href="mailto:info@mail.rakuten-card.co.jp">info@mail.rakuten-card.co.jp</a>&gt;<br/>Date: 2020&#x5E74;11&#x6708;14&#x65E5;(&#x571F;) 15:49<br/>Subject: &#x30AB;&#x30FC;&#x30C9;&#x5229;&#x7528;&#x306E;&#x304A;&#x77E5;&#x3089;&#x305B;(&#x672C;&#x4EBA;&#x3054;&#x5229;&#x7528;&#x5206;)<br/>To: &lt;<a href="mailto:kandent914@gmail.com">kandent914@gmail.com</a>&gt;</p><p>  &#x697D;&#x5929;&#x30AB;&#x30FC;&#x30C9;&#x3092;&#x88C5;&#x3063;&#x305F;&#x4E0D;&#x5BE9;&#x306A;&#x30E1;&#x30FC;&#x30EB;&#x306B;&#x3054;&#x6CE8;&#x610F;&#x304F;&#x3060;&#x3055;&#x3044; &lt;<a href="https://r10.to/hONHt2">https://r10.to/hONHt2</a>&gt;<br/>[image: RakutenCard]<br/>&lt;<a href="https://www.rakuten-card.co.jp/?scid=mi_rkc_oo_htmlml_logo11434">https://www.rakuten-card.co.jp/?scid=mi_rkc_oo_htmlml_logo11434</a>&gt;<br/>*&#x30AB;&#x30FC;&#x30C9;&#x5229;&#x7528;&#x304A;&#x77E5;&#x3089;&#x305B;&#x30E1;&#x30FC;&#x30EB;*<br/>&#x697D;&#x5929;e-NAVI&#x3078;<br/>&lt;<a href="https://www.rakuten-card.co.jp/e-navi/?scid=mi_rkc_oo_htmlml_headlogin11434">https://www.rakuten-card.co.jp/e-navi/?scid=mi_rkc_oo_htmlml_headlogin11434</a>&gt;<br/>&#x306F;&#x3053;&#x3061;&#x3089;&#x304B;&#x3089;&#x30ED;&#x30B0;&#x30A4;&#x30F3;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;<br/>------------------------------</p><p>*&#x697D;&#x5929;&#x30AB;&#x30FC;&#x30C9;&#xFF08;MasterCard&#xFF09;&#x3092; &#x3054;&#x5229;&#x7528;&#x3044;&#x305F;&#x3060;&#x304D;&#x3001;&#x8AA0;&#x306B;&#x3042;&#x308A;&#x304C;&#x3068;&#x3046;&#x3054;&#x3056;&#x3044;&#x307E;&#x3059;&#x3002;*<br/>------------------------------<br/>&#x304A;&#x5BA2;&#x69D8;&#x306E;&#x30AB;&#x30FC;&#x30C9;&#x5229;&#x7528;&#x60C5;&#x5831;&#x304C;&#x5F0A;&#x793E;&#x306B;&#x65B0;&#x305F;&#x306B;&#x767B;&#x9332;&#x3055;&#x308C;&#x307E;&#x3057;&#x305F;&#x306E;&#x3067;&#x3054;&#x6848;&#x5185;&#x3044;&#x305F;&#x3057;&#x307E;&#x3059;&#x3002;<br/>&#x30AB;&#x30FC;&#x30C9;&#x5229;&#x7528;&#x304A;&#x77E5;&#x3089;&#x305B;&#x30E1;&#x30FC;&#x30EB;&#x306F;&#x3001;&#x52A0;&#x76DF;&#x5E97;&#x304B;&#x3089;&#x697D;&#x5929;&#x30AB;&#x30FC;&#x30C9;&#x306E;&#x3054;&#x5229;&#x7528;&#x30C7;&#x30FC;&#x30BF;&#x304C;&#x5F0A;&#x793E;&#x306B;&#x5230;&#x7740;&#x3057;&#x305F;&#x539F;&#x5247;2&#x55B6;&#x696D;&#x65E5;&#x5F8C;&#x306B;&#x3054;&#x6307;&#x5B9A;&#x306E;&#x30E1;&#x30FC;&#x30EB;&#x30A2;&#x30C9;&#x30EC;&#x30B9;&#x3078;&#x901A;&#x77E5;&#x3059;&#x308B;&#x30B5;&#x30FC;&#x30D3;&#x30B9;&#x3067;&#x3059;&#x3002;</p><p>------------------------------<br/>*&#x30AB;&#x30FC;&#x30C9;&#x3054;&#x5229;&#x7528;&#x60C5;&#x5831;*<br/>------------------------------<br/>&#xFF1E;&#x3059;&#x3079;&#x3066;&#x306E;&#x3054;&#x5229;&#x7528;&#x660E;&#x7D30;&#x306E;&#x78BA;&#x8A8D;&#x306F;&#x3053;&#x3061;&#x3089;<br/>&lt;<a href="https://www.rakuten-card.co.jp/e-navi/members/statement/index.xhtml?scid=mi_rkc_oo_h-oml005">https://www.rakuten-card.co.jp/e-navi/members/statement/index.xhtml?scid=mi_rkc_oo_h-oml005</a>&gt;</p><p>*&lt;&lt;&#x30EA;&#x30DC;&#x6255;&#x3044;&#x3078;&#x5909;&#x66F4;&#x53EF;&#x80FD;&#x306A;&#x30B7;&#x30E7;&#x30C3;&#x30D4;&#x30F3;&#x30B0;&#x3054;&#x5229;&#x7528;&#x5206;&gt;&gt;*<br/>&#x3054;&#x5229;&#x7528;&#x4E00;&#x89A7;</p><p>*&#x30EA;&#x30DC;&#x6255;&#x3044;&#x5909;&#x66F4;&#x9078;&#x629E;* *&#x5229;&#x7528;&#x65E5;* *&#x5229;&#x7528;&#x5148;* *&#x5229;&#x7528;&#x8005;*<br/>*&#x652F;&#x6255; &#x65B9;&#x6CD5;* *&#x5229;&#x7528;&#x91D1;&#x984D;* *&#x652F;&#x6255;&#x6708;*<br/>*&#x30AB;&#x30FC;&#x30C9;&#x5229;&#x7528;&#x7372;&#x5F97; &#x30DD;&#x30A4;&#x30F3;&#x30C8;*<br/>*&#x30DD;&#x30A4;&#x30F3;&#x30C8;&#x7372;&#x5F97;&#x4E88;&#x5B9A;&#x6708;*<br/>2020/11/09 <a href="http://AMAZON.CO.JP">AMAZON.CO.JP</a> &#x672C;&#x4EBA; 1&#x56DE; 399 &#x5186; 2020/12 3 &#x30DD;&#x30A4;&#x30F3;&#x30C8; 2020/12<br/>*&#x30EA;&#x30DC;&#x6255;&#x3044;&#x5909;&#x66F4;&#x53EF;&#x80FD;&#x5408;&#x8A08;&#x91D1;&#x984D;* 399 &#x5186; *&#x30DD;&#x30A4;&#x30F3;&#x30C8;&#x5408;&#x8A08;* 3 &#x30DD;&#x30A4;&#x30F3;&#x30C8;<br/>&#x203B;&#x300C;&#x3054;&#x5229;&#x7528;&#x4E00;&#x89A7;&#x300D;&#x5DE6;&#x5217;&#x306E;&#x300C;&#x30EA;&#x30DC;&#x6255;&#x3044;&#x5909;&#x66F4;&#x9078;&#x629E;&#x300D;&#x3092;&#x30C1;&#x30A7;&#x30C3;&#x30AF;&#x3057;&#x3066;&#x30DC;&#x30BF;&#x30F3;&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3059;&#x308B;&#x3068;&#x3001;<br/>&#x30EA;&#x30DC;&#x6255;&#x3044;&#x306E;&#x5909;&#x66F4;&#x753B;&#x9762;&#x3078;&#x79FB;&#x52D5;&#x3057;&#x307E;&#x3059;</p><p>*&lt;&lt;&#x672C;&#x30E1;&#x30FC;&#x30EB;&#x63B2;&#x8F09;&#x3054;&#x5229;&#x7528;&#x5206;&#x306E;&#x5408;&#x8A08;&gt;&gt;*<br/>&#x25A0;&#x5F53;&#x6708;&#x304A;&#x652F;&#x6255;&#x3044;&#x4E88;&#x5B9A;&#x306E;1&#x56DE;&#x6255;&#x3044;<br/>0&#x4EF6;<br/>0&#x5186;<br/>&#x25A0;&#x7FCC;&#x6708;&#x304A;&#x652F;&#x6255;&#x3044;&#x4E88;&#x5B9A;&#x306E;1&#x56DE;&#x6255;&#x3044;<br/>1&#x4EF6;<br/>399&#x5186;<br/>&#x25A0;&#x5206;&#x5272;/&#x30DC;&#x30FC;&#x30CA;&#x30B9;&#x6255;&#x3044;/&#x30EA;&#x30DC;&#x6255;&#x3044;<br/>0&#x4EF6;<br/>0&#x5186;<br/>*&#x5408;&#x8A08;*<br/>*1&#x4EF6;*<br/>*399&#x5186;*<br/>*&#x5408;&#x8A08;&#x7372;&#x5F97;&#x4E88;&#x5B9A;&#x30DD;&#x30A4;&#x30F3;&#x30C8;&#x6570;*<br/>*3&#x30DD;&#x30A4;&#x30F3;&#x30C8;*<br/>&gt;&gt;&#x30AB;&#x30FC;&#x30C9;&#x5229;&#x7528;&#x304A;&#x77E5;&#x3089;&#x305B;&#x30E1;&#x30FC;&#x30EB;&#x306E;&#x6CE8;&#x610F;&#x4E8B;&#x9805;<br/>&lt;<a href="https://www.rakuten-card.co.jp/service/information_mail/?scid=mi_rkc_oo_sales-pc-html_note#sales-note">https://www.rakuten-card.co.jp/service/information_mail/?scid=mi_rkc_oo_sales-pc-html_note#sales-note</a>&gt;<br/>&gt;&gt;&#x30E1;&#x30FC;&#x30EB;&#x30A2;&#x30C9;&#x30EC;&#x30B9;&#x306E;&#x3054;&#x5909;&#x66F4; &lt;<a href="https://r10.to/hvLsOc">https://r10.to/hvLsOc</a>&gt;<br/>&gt;&gt;&#x30AB;&#x30FC;&#x30C9;&#x5229;&#x7528;&#x304A;&#x77E5;&#x3089;&#x305B;&#x30E1;&#x30FC;&#x30EB;&#x306E;&#x6982;&#x8981;&#x306B;&#x3064;&#x3044;&#x3066;<br/>&lt;<a href="https://www.rakuten-card.co.jp/service/information_mail/">https://www.rakuten-card.co.jp/service/information_mail/</a>&gt;<br/>&gt;&gt;&#x4E07;&#x304C;&#x4E00;&#x3054;&#x5229;&#x7528;&#x306B;&#x899A;&#x3048;&#x306E;&#x306A;&#x3044;&#x5834;&#x5408;&#x306F;&#x3001;&#x3088;&#x304F;&#x3042;&#x308B;&#x304A;&#x554F;&#x3044;&#x5408;&#x308F;&#x305B;&#x4E8B;&#x4F8B;&#x3092;&#x3054;&#x78BA;&#x8A8D;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;<br/>&lt;<a href="https://www.rakuten-card.co.jp/contact/security/?scid=mi_rkc_oo_cardusagemail_to_contactsecurity">https://www.rakuten-card.co.jp/contact/security/?scid=mi_rkc_oo_cardusagemail_to_contactsecurity</a>&gt;<br/>*&#x3010;* *&#x30EA;&#x30DC;&#x6255;&#x3044;&#x3078;&#x306E;&#x5909;&#x66F4;&#x306B;&#x95A2;&#x3059;&#x308B;&#x6CE8;&#x610F;&#x4E8B;&#x9805;&#x3011;*<br/>&#x30FB;<br/>&#x81EA;&#x52D5;&#x30EA;&#x30DC;&#x30B5;&#x30FC;&#x30D3;&#x30B9;&#x306B;&#x3054;&#x767B;&#x9332;&#x3044;&#x305F;&#x3060;&#x3044;&#x305F;&#x5F8C;&#x306E;&#x3054;&#x5229;&#x7528;&#x5206;&#x306F;&#x3001;&lt;&lt;&#x30EA;&#x30DC;&#x6255;&#x3044;&#x3078;&#x5909;&#x66F4;&#x3067;&#x304D;&#x306A;&#x3044;&#x30B7;&#x30E7;&#x30C3;&#x30D4;&#x30F3;&#x30B0;&#x3054;&#x5229;&#x7528;&#x5206;&gt;&gt;&#x306E;&#x3054;&#x5229;&#x7528;&#x4E00;&#x89A7;&#x3078;&#x542B;&#x307E;&#x308C;&#x3066;&#x304A;&#x308A;&#x307E;&#x3059;&#x3002;&#x306A;&#x304A;&#x3001;&#x81EA;&#x52D5;&#x30EA;&#x30DC;&#x30B5;&#x30FC;&#x30D3;&#x30B9;&#x306B;&#x3054;&#x767B;&#x9332;&#x306B;&#x3044;&#x305F;&#x3060;&#x3044;&#x3066;&#x3044;&#x308B;&#x5834;&#x5408;&#x3067;&#x3042;&#x3063;&#x3066;&#x3082;&#x3001;&#x5272;&#x8CE6;&#x67A0;&#x3092;&#x8D85;&#x3048;&#x305F;&#x3054;&#x5229;&#x7528;&#x5206;&#x306F;&#x3001;&#x30EA;&#x30DC;&#x6255;&#x3044;&#x3067;&#x306F;&#x306A;&#x304F;1&#x56DE;&#x6255;&#x3044;&#x3068;&#x306A;&#x308A;&#x307E;&#x3059;&#x3002;&#xFF08;&#x304A;&#x5BA2;&#x69D8;&#x306E;<br/>&#x3054;&#x5229;&#x7528;&#x53EF;&#x80FD;&#x984D;&#x306E;&#x3054;&#x78BA;&#x8A8D;&#x306F;&#x3053;&#x3061;&#x3089; &lt;<a href="https://r10.to/hssYt3">https://r10.to/hssYt3</a>&gt;&#xFF09;<br/>&#x203B;&#x30AB;&#x30FC;&#x30C9;&#x306E;&#x5E74;&#x4F1A;&#x8CBB;&#x30FB;&#x5206;&#x5272;&#x6255;&#x3044;(3&#xFF5E;36&#x56DE;)&#x30FB;&#x30DC;&#x30FC;&#x30CA;&#x30B9;2&#x56DE;&#x6255;&#x3044;&#x306E;&#x3054;&#x5229;&#x7528;&#x5206;&#x3084;&#x5BB6;&#x8CC3;&#x306E;&#x304A;&#x652F;&#x6255;&#x3044;&#x306A;&#x3069;&#x4E00;&#x90E8;&#x306E;&#x52A0;&#x76DF;&#x5E97;&#x306E;&#x3054;&#x5229;&#x7528;&#x5206;&#x306B;&#x3064;&#x3044;&#x3066;&#x306F;&#x3001;&#x30EA;&#x30DC;&#x6255;&#x3044;&#x3078;&#x306E;&#x5909;&#x66F4;&#x306F;&#x3067;&#x304D;&#x307E;&#x305B;&#x3093;&#x3002;<br/>------------------------------<br/>*&#x697D;&#x5929;e-NAVI&#x3067;&#x3054;&#x5229;&#x7528;&#x3044;&#x305F;&#x3060;&#x3051;&#x308B;&#x304A;&#x652F;&#x6255;&#x3044;&#x30B5;&#x30DD;&#x30FC;&#x30C8;&#x6A5F;&#x80FD;*<br/>------------------------------<br/>&lt;<a href="https://www.rakuten-card.co.jp/e-navi/members/statement/index.xhtml?scid=mi_rkc_oo_h-oml007">https://www.rakuten-card.co.jp/e-navi/members/statement/index.xhtml?scid=mi_rkc_oo_h-oml007</a>&gt;<br/>&lt;<a href="https://www.rakuten-card.co.jp/e-navi/members/credit-limit/balance/index.xhtml?scid=mi_rkc_oo_h-oml008">https://www.rakuten-card.co.jp/e-navi/members/credit-limit/balance/index.xhtml?scid=mi_rkc_oo_h-oml008</a>&gt;<br/>&lt;<a href="https://www.rakuten-card.co.jp/e-navi/members/credit-limit/availability/index.xhtml?scid=mi_rkc_oo_h-oml009">https://www.rakuten-card.co.jp/e-navi/members/credit-limit/availability/index.xhtml?scid=mi_rkc_oo_h-oml009</a>&gt;<br/>&lt;<a href="https://www.rakuten-card.co.jp/e-navi/index.xhtml?q=revo&scid=mi_rkc_oo_h-soml010">https://www.rakuten-card.co.jp/e-navi/index.xhtml?q=revo&scid=mi_rkc_oo_h-soml010</a>&gt;<br/>&lt;<a href="https://www.rakuten-card.co.jp/e-navi/members/payment/auto-revolving/index.xhtml?scid=mi_rkc_oo_h-oml011">https://www.rakuten-card.co.jp/e-navi/members/payment/auto-revolving/index.xhtml?scid=mi_rkc_oo_h-oml011</a>&gt;<br/>&lt;<a href="https://www.rakuten-card.co.jp/e-navi/members/cash-advance/guide/index.xhtml?scid=mi_rkc_oo_h-oml012">https://www.rakuten-card.co.jp/e-navi/members/cash-advance/guide/index.xhtml?scid=mi_rkc_oo_h-oml012</a>&gt;</p><p>------------------------------<br/>*&#x5B89;&#x5FC3;&#x3057;&#x3066;&#x30AB;&#x30FC;&#x30C9;&#x3092;&#x3054;&#x5229;&#x7528;&#x3044;&#x305F;&#x3060;&#x304F;&#x305F;&#x3081;&#x306B;*<br/>------------------------------<br/>&#x30AB;&#x30FC;&#x30C9;&#x5229;&#x7528;&#x304A;&#x77E5;&#x3089;&#x305B;&#x30E1;&#x30FC;&#x30EB;&#x306E;&#x307B;&#x304B;&#x306B;&#x3001;&#x3055;&#x307E;&#x3056;&#x307E;&#x306A;&#x30BB;&#x30AD;&#x30E5;&#x30EA;&#x30C6;&#x30A3;&#x306B;&#x95A2;&#x3059;&#x308B;&#x30B5;&#x30FC;&#x30D3;&#x30B9;&#x3084;&#x30B3;&#x30F3;&#x30C6;&#x30F3;&#x30C4;&#x3092;&#x3054;&#x7528;&#x610F;&#x3057;&#x3066;&#x304A;&#x308A;&#x307E;&#x3059;&#x3002;&#x3053;&#x3061;&#x3089;&#x3082;&#x305C;&#x3072;&#x3054;&#x5229;&#x7528;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;<br/>[image: &#x30A4;&#x30F3;&#x30BF;&#x30FC;&#x30CD;&#x30C3;&#x30C8;&#x72AF;&#x7F6A;&#x306B;&#x3054;&#x6CE8;&#x610F;&#x304F;&#x3060;&#x3055;&#x3044;] &lt;<a href="https://r10.to/hzey6Z">https://r10.to/hzey6Z</a>&gt; [image: &#x672C;&#x4EBA;&#x8A8D;&#x8A3C;&#x30B5;&#x30FC;&#x30D3;&#x30B9;]<br/>&lt;<a href="https://r10.to/hzPuTM">https://r10.to/hzPuTM</a>&gt;</p><p>------------------------------<br/>*&#x697D;&#x5929;&#x30AB;&#x30FC;&#x30C9;&#x306E;&#x53D6;&#x308A;&#x7D44;&#x307F;*<br/>------------------------------<br/>&#x304A;&#x5BA2;&#x69D8;&#x3088;&#x308A;&#x9802;&#x6234;&#x3057;&#x305F;&#x3054;&#x610F;&#x898B;&#x30FB;&#x3054;&#x8981;&#x671B;&#x306E;&#x4E00;&#x3064;&#x3072;&#x3068;&#x3064;&#x3092;&#x771F;&#x646F;&#x306B;&#x53D7;&#x3051;&#x6B62;&#x3081;&#x3001;&#x3055;&#x3089;&#x306A;&#x308B;&#x5B89;&#x5FC3;&#x3068;&#x4FE1;&#x983C;&#x3092;&#x3054;&#x63D0;&#x4F9B;&#x3067;&#x304D;&#x308B;&#x3088;&#x3046;&#x3001;&#x65E5;&#x3005;&#x6539;&#x5584;&#x306B;&#x53D6;&#x308A;&#x7D44;&#x3093;&#x3067;&#x304A;&#x308A;&#x307E;&#x3059;&#x3002;<br/>[image: &#x304A;&#x5BA2;&#x69D8;&#x306E;&#x58F0;&#x3092;&#x5B9F;&#x73FE;&#x3057;&#x307E;&#x3057;&#x305F;&#x3002;]<br/>&gt;&gt;&#x304A;&#x5BA2;&#x69D8;&#x306E;&#x58F0;&#x3078;&#x306E;&#x53D6;&#x308A;&#x7D44;&#x307F;&#x306B;&#x3064;&#x3044;&#x3066;&#x306F;&#x3053;&#x3061;&#x3089;&#x304B;&#x3089; &lt;<a href="https://r10.to/hsgGv4">https://r10.to/hsgGv4</a>&gt;</p><p>------------------------------<br/>*&#x304A;&#x5F97;&#x306A;&#x60C5;&#x5831;*<br/>------------------------------<br/>[image: &#x697D;&#x5929;&#x30E2;&#x30D0;&#x30A4;&#x30EB; Rakuten UN-LIMIT V] &lt;<a href="https://r10.to/hVRvPM">https://r10.to/hVRvPM</a>&gt; [image:<br/>&#x304A;&#x5E97;&#x304B;&#x3089;&#x306E;&#x7279;&#x5178;&#x304C;&#x5C4A;&#x3044;&#x3066;&#x3044;&#x307E;&#x3059;&#xFF01;] &lt;<a href="https://r10.to/hfNKai">https://r10.to/hfNKai</a>&gt;</p><p>&#x25A0; &#x30AB;&#x30FC;&#x30C9;&#x5229;&#x7528;&#x304A;&#x77E5;&#x3089;&#x305B;&#x30E1;&#x30FC;&#x30EB;&#x306E;&#x767B;&#x9332;&#x30FB;&#x5909;&#x66F4;&#x306F;&#x3001;&#x697D;&#x5929;e-NAVI<br/>&lt;<a href="https://www.rakuten-card.co.jp/e-navi/members/settings/card-usage-email/index.xhtml?scid=mi_rkc_oo_usage_footer_11433">https://www.rakuten-card.co.jp/e-navi/members/settings/card-usage-email/index.xhtml?scid=mi_rkc_oo_usage_footer_11433</a>&gt;<br/>&#x3088;&#x308A;&#x304A;&#x624B;&#x7D9A;&#x304D;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;<br/>&#x25A0; &#x4E00;&#x90E8;&#x30E1;&#x30FC;&#x30EB;&#x306E;&#x53D7;&#x4FE1;&#x74B0;&#x5883;&#x306B;&#x3088;&#x3063;&#x3066;&#x6B63;&#x3057;&#x304F;&#x8868;&#x793A;&#x3055;&#x308C;&#x306A;&#x3044;&#x5834;&#x5408;&#x304C;&#x3054;&#x3056;&#x3044;&#x307E;&#x3059;&#x3002;&#x672C;&#x30E1;&#x30FC;&#x30EB;&#x306B;&#x8A18;&#x8F09;&#x306E;&#x3054;&#x5229;&#x7528;&#x660E;&#x7D30;&#x306F;&#x3001;&#x697D;&#x5929;e-NAVI&#x306E;&#x3054;&#x5229;&#x7528;&#x660E;&#x7D30;<br/>&lt;<a href="https://www.rakuten-card.co.jp/e-navi/members/statement/index.xhtml">https://www.rakuten-card.co.jp/e-navi/members/statement/index.xhtml</a>&gt;<br/>&#x306B;&#x3066;&#x3054;&#x78BA;&#x8A8D;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;<br/>&#x25A0; &#x672C;&#x30E1;&#x30FC;&#x30EB;&#x30A2;&#x30C9;&#x30EC;&#x30B9;&#x306F;&#x914D;&#x4FE1;&#x5C02;&#x7528;&#x306E;&#x305F;&#x3081;&#x3001;&#x304A;&#x554F;&#x3044;&#x5408;&#x308F;&#x305B;&#x306E;&#x969B;&#x306F;&#x304A;&#x5BA2;&#x69D8;&#x30B5;&#x30DD;&#x30FC;&#x30C8;<br/>&lt;<a href="https://www.rakuten-card.co.jp/support/">https://www.rakuten-card.co.jp/support/</a>&gt;&#x3092;&#x3054;&#x78BA;&#x8A8D;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;</p><p>&#x697D;&#x5929;e-NAVI&#x306E;&#x3054;&#x5229;&#x7528;&#x958B;&#x59CB;&#x624B;&#x7D9A;&#x304D;/&#x30ED;&#x30B0;&#x30A4;&#x30F3;<br/>&lt;<a href="https://www.rakuten-card.co.jp/e-navi/?scid=mi_rkc_oo_htmlml_footlogin11434">https://www.rakuten-card.co.jp/e-navi/?scid=mi_rkc_oo_htmlml_footlogin11434</a>&gt;<br/>&boxv;&#x697D;&#x5929;e-NAVI &#x30E1;&#x30F3;&#x30C6;&#x30CA;&#x30F3;&#x30B9;&#x60C5;&#x5831;<br/>&lt;<a href="https://www.rakuten-card.co.jp/info/rules/maintenance/?scid=mi_rkc_oo_htmlml_mainte11434">https://www.rakuten-card.co.jp/info/rules/maintenance/?scid=mi_rkc_oo_htmlml_mainte11434</a>&gt;</p><p>&#x767A;&#x884C;&#x5143;  &#x697D;&#x5929;&#x30AB;&#x30FC;&#x30C9;&#x682A;&#x5F0F;&#x4F1A;&#x793E;<br/><a href="https://www.rakuten-card.co.jp/">https://www.rakuten-card.co.jp/</a><br/>&lt;<a href="https://www.rakuten-card.co.jp/?scid=mi_rkc_oo_htmlml_kctop11434">https://www.rakuten-card.co.jp/?scid=mi_rkc_oo_htmlml_kctop11434</a>&gt;<br/>&copy; Rakuten Card Co., Ltd.</p>',
+    subject: 'Fwd: カード利用のお知らせ(本人ご利用分)',
+    references: '<20150301050000.86539038.1000.140346@mkrm.rakuten.com>',
+    date: 2020-11-15T04:57:34.000Z,
+    to: {
+      value: [ [Object] ],
+      html: '<span class="mp_address_group"><a href="mailto:ses-s3-mail@e64apiru.numrock-k.com" class="mp_address_email">ses-s3-mail@e64apiru.numrock-k.com</a></span>',
+      text: 'ses-s3-mail@e64apiru.numrock-k.com'
+    },
+    from: {
+      value: [ [Object] ],
+      html: '<span class="mp_address_group"><span class="mp_address_name">&#x91CE;&#x6751;&#x4FCA;&#x592A;</span> &lt;<a href="mailto:kandent914@gmail.com" class="mp_address_email">kandent914@gmail.com</a>&gt;</span>',
+      text: '野村俊太 <kandent914@gmail.com>'
+    },
+    messageId: '<CAMTa_=QDeQZ61uqn7Pwr55TO01XGFTGjx7kHj6NodnBT95Z6rw@mail.gmail.com>',
+    inReplyTo: '<20150301050000.86539038.1000.140346@mkrm.rakuten.com>'
+  }

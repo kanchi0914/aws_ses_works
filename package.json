@@ -1,0 +1,17 @@
+{
+  "name": "aws_ses_works",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.792.0",
+    "jquery": "^3.5.1",
+    "jsdom": "^16.4.0",
+    "mailparser": "^3.0.0"
+  }
+}
